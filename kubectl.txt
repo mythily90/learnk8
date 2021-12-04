@@ -1,0 +1,4 @@
+PODS:
+*******
+
+kubectl get pods -n <<namespace>> 
