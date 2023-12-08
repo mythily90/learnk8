@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reversehello-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: reversehello
+  template:
+    metadata:
+      labels:
+        app: reversehello
+    spec:
+      containers:
+      - name: reversehello-container
+        image: reversehello:v3
+        ports:
+        - containerPort: 5002

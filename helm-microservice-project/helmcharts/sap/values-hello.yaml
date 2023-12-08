@@ -1,0 +1,12 @@
+replicaCount: 1
+
+name: helloapp
+
+container:
+  image: helloapp
+  imagetag: v2
+  port: 5001
+
+service:
+  protocol: TCP
+  port: 5001

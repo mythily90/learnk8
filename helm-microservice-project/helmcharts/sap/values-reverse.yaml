@@ -1,0 +1,12 @@
+replicaCount: 1
+
+name: reversehello
+
+container:
+  image: reversehello
+  imagetag: v3
+  port: 5002
+
+service:
+  protocol: TCP
+  port: 5002
